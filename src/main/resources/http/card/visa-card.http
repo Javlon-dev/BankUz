@@ -1,0 +1,17 @@
+### Create Visa Card
+POST http://localhost:5000/api/v1/visa-card
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+
+### Change Status
+PUT http://localhost:5000/api/v1/visa-card/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+
+{
+  "pan": "4604722688408371",
+  "cvvCode": "868"
+}
+
+### Get All Inactive
+GET http://localhost:5000/api/v1/visa-card/all?page=0&size=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg

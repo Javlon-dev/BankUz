@@ -1,0 +1,16 @@
+### Create Uzcard
+POST http://localhost:5000/api/v1/uzcard
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+
+### Change Status
+PUT http://localhost:5000/api/v1/uzcard/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+
+{
+  "pan": "8600639034637668"
+}
+
+### Get All Inactive
+GET http://localhost:5000/api/v1/uzcard/all?page=0&size=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg

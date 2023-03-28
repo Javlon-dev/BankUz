@@ -1,0 +1,64 @@
+### Make Transfers
+POST http://localhost:5000/api/v1/transfers
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzQ1OTYxMiwiZXhwIjoxNjU4MDY0NDEyfQ.7jFenZlO81Z7afCUIRqEPMYztWgn7FRZKDVylipBmiI
+
+{
+  "fromCardPan": "9860245234647642",
+  "toCardPan": "8600634498186927",
+  "amount": "10000"
+}
+
+### Make Transfers
+POST http://localhost:5000/api/v1/transfers
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzQ1OTYxMiwiZXhwIjoxNjU4MDY0NDEyfQ.7jFenZlO81Z7afCUIRqEPMYztWgn7FRZKDVylipBmiI
+
+{
+  "fromCardPan": "4604729898011657",
+  "toCardPan": "4604722688408371",
+  "amount": "12"
+}
+
+### Get Commission
+GET http://localhost:5000/api/v1/transfers/commission?amount=20&type=usd
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzQ1OTYxMiwiZXhwIjoxNjU4MDY0NDEyfQ.7jFenZlO81Z7afCUIRqEPMYztWgn7FRZKDVylipBmiI
+
+
+### Make Conversion
+POST http://localhost:5000/api/v1/transfers/conversion
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzQ1OTYxMiwiZXhwIjoxNjU4MDY0NDEyfQ.7jFenZlO81Z7afCUIRqEPMYztWgn7FRZKDVylipBmiI
+
+{
+  "fromCardPan": "8600634498186927",
+  "toCardPan": "4604722157838951",
+  "amount": "1"
+}
+
+### Transfers Pagination
+GET http://localhost:5000/api/v1/transfers
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzQ1OTYxMiwiZXhwIjoxNjU4MDY0NDEyfQ.7jFenZlO81Z7afCUIRqEPMYztWgn7FRZKDVylipBmiI
+
+
+### Transfers Pagination By Status
+POST http://localhost:5000/api/v1/transfers/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzQ1OTYxMiwiZXhwIjoxNjU4MDY0NDEyfQ.7jFenZlO81Z7afCUIRqEPMYztWgn7FRZKDVylipBmiI
+
+{
+  "status": "SUCCESS"
+}
+
+
+### Transfers Pagination By Profile Id
+GET http://localhost:5000/api/v1/transfers/my
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzQ1OTYxMiwiZXhwIjoxNjU4MDY0NDEyfQ.7jFenZlO81Z7afCUIRqEPMYztWgn7FRZKDVylipBmiI

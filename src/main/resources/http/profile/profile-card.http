@@ -1,0 +1,66 @@
+### Assign Phone To Uzcard
+POST http://localhost:5000/api/v1/profile-card/uzcard/8a8a822d81dc5ae50181dc61c85a0000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+
+{
+  "pan": "8600634498186927"
+}
+
+### Assign Phone To Humo Card
+POST http://localhost:5000/api/v1/profile-card/humo/8a8a822d81dc5ae50181dc61c85a0000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+
+{
+  "pan": "9860245234647642"
+}
+
+### Assign Phone To Visa Card
+POST http://localhost:5000/api/v1/profile-card/visa/8a8a822d81dc5ae50181dc61c85a0000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+
+{
+  "pan": "4604722157838951",
+  "cvvCode": "512"
+}
+
+### Update Status To Uzcard
+PUT http://localhost:5000/api/v1/profile-card/uzcard/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyYzk0OGE4MzgxZDMxNzE1MDE4MWQzMWQwYmU5MDAwNCIsImlhdCI6MTY1NzEwNDMwNSwiZXhwIjoxNjU3NzA5MTA1fQ.tJHeoZ-mkKW7DB9Fvw7ewkqskPyDQJjCKdKMn03Xon0
+
+{
+  "pan": "4604722688408371"
+}
+
+### Update Status To Humo Card
+PUT http://localhost:5000/api/v1/profile-card/humo/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyYzk0OGE4MzgxZDMxNzE1MDE4MWQzMWQwYmU5MDAwNCIsImlhdCI6MTY1NzEwNDMwNSwiZXhwIjoxNjU3NzA5MTA1fQ.tJHeoZ-mkKW7DB9Fvw7ewkqskPyDQJjCKdKMn03Xon0
+
+{
+  "pan": "4604722688408371"
+}
+
+### Update Status Visa Card
+PUT http://localhost:5000/api/v1/profile-card/visa/status
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyYzk0OGE4MzgxZDMxNzE1MDE4MWQzMWQwYmU5MDAwNCIsImlhdCI6MTY1NzEwNDMwNSwiZXhwIjoxNjU3NzA5MTA1fQ.tJHeoZ-mkKW7DB9Fvw7ewkqskPyDQJjCKdKMn03Xon0
+
+{
+  "pan": "4604722688408371",
+  "cvvCode": "868"
+}
+
+### By Phone Number
+GET http://localhost:5000/api/v1/profile-card
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyYzk0OGE4MzgxZDMxNzE1MDE4MWQzMWQwYmU5MDAwNCIsImlhdCI6MTY1NzEwNDMwNSwiZXhwIjoxNjU3NzA5MTA1fQ.tJHeoZ-mkKW7DB9Fvw7ewkqskPyDQJjCKdKMn03Xon0
+
+
+### By Profile Id
+GET http://localhost:5000/api/v1/profile-card/8a8a822d81dc5ae50181dc61c85a0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTc0NTk0NDUsImV4cCI6MTY1ODA2NDI0NX0.lpa3dgYMUGO1m1itVMaO0XnV5BqUGl_Xp3LsXlbtnz0
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyYzk0OGE4MzgxZDMxNzE1MDE4MWQzMWQwYmU5MDAwNCIsImlhdCI6MTY1NzEwNDMwNSwiZXhwIjoxNjU3NzA5MTA1fQ.tJHeoZ-mkKW7DB9Fvw7ewkqskPyDQJjCKdKMn03Xon0

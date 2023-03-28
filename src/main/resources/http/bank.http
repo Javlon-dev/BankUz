@@ -1,0 +1,14 @@
+### Add Bank
+POST http://localhost:5000/api/v1/bank
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+
+{
+  "mfoCode": "123123"
+}
+
+
+### Get All Bank
+GET http://localhost:5000/api/v1/bank
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+

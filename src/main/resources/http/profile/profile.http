@@ -1,0 +1,41 @@
+### Get Profile
+GET http://localhost:5000/api/v1/profile
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzI1OTgwNCwiZXhwIjoxNjU3ODY0NjA0fQ.7uBGNF1yV4o30ebC-jAHrFblwDJpLte0qLgB_gILjBk
+
+
+### Update Phone
+PUT http://localhost:5000/api/v1/profile
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzI1OTgwNCwiZXhwIjoxNjU3ODY0NjA0fQ.7uBGNF1yV4o30ebC-jAHrFblwDJpLte0qLgB_gILjBk
+
+{
+  "phoneNumber": "+998903266527"
+}
+
+
+### Update Bio
+PUT http://localhost:5000/api/v1/profile/bio
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzI1OTgwNCwiZXhwIjoxNjU3ODY0NjA0fQ.7uBGNF1yV4o30ebC-jAHrFblwDJpLte0qLgB_gILjBk
+
+{
+  "name": "   Javlon      ",
+  "surname": "      Dev       "
+}
+
+
+### Update Status
+PUT http://localhost:5000/api/v1/profile/status/2c948a8381cfbedc0181cfbf569b0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzI1OTgwNCwiZXhwIjoxNjU3ODY0NjA0fQ.7uBGNF1yV4o30ebC-jAHrFblwDJpLte0qLgB_gILjBk
+
+
+### Delete Profile
+DELETE http://localhost:5000/api/v1/profile/delete
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzI1OTgwNCwiZXhwIjoxNjU3ODY0NjA0fQ.7uBGNF1yV4o30ebC-jAHrFblwDJpLte0qLgB_gILjBk
+
+

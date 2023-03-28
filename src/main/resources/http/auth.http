@@ -1,0 +1,25 @@
+### Send Sms
+POST http://localhost:5000/api/v1/auth/send-sms
+Content-Type: application/json
+
+{
+  "phoneNumber": "+998903266525"
+}
+
+### Login
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "phoneNumber": "+998903266525",
+  "smsCode": "858887"
+}
+
+### Registration
+POST http://localhost:5000/api/v1/auth/registration/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjU3MjU5NzgzLCJleHAiOjE2NTcyNTk5NjN9.hFf_AG-aglAtwTNtDOlpBXGvrI_3lmEoYCAOY_m0PQQ
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "surname": "Aliyev"
+}

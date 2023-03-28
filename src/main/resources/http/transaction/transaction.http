@@ -1,0 +1,15 @@
+### Transaction Pagination
+GET http://localhost:5000/api/v1/transaction
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzI1OTgwNCwiZXhwIjoxNjU3ODY0NjA0fQ.7uBGNF1yV4o30ebC-jAHrFblwDJpLte0qLgB_gILjBk
+
+
+### Transaction Pagination By Status
+POST http://localhost:5000/api/v1/transaction
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJlMjU2MjMzOC03ZWY0LTRlZTUtYWYxYS0yNjhlYjc2ZTFmZDgiLCJpYXQiOjE2NTcyNTk3MTcsImV4cCI6MTY1Nzg2NDUxN30.-rgDZwypDWvspAzgPyoIGeOEt5mJmvhgSqDfzZpmdWg
+#Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4YThhODIyZDgxZGM1YWU1MDE4MWRjNjFjODVhMDAwMCIsImlhdCI6MTY1NzI1OTgwNCwiZXhwIjoxNjU3ODY0NjA0fQ.7uBGNF1yV4o30ebC-jAHrFblwDJpLte0qLgB_gILjBk
+
+{
+  "status": "DEBIT"
+}
